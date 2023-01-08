@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Apartments</title>
+</head>
+<body>
+  <div class="header">
+  <nav>
+  <div id="logo">
+    <a href="/"><h1>FRA</h1></a>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/">About</a></li>
+    <li><a href="/">Rent</a></li>
+    <li><a href="/">Gallery</a></li>
+    <li><a href="/">Residents</a></li>
+    <li><a href="/">Contact</a></li>
+  </ul>
+  </nav>
+  </div>
+  <!-- Hero -->
+  <div class="home-hero">
+  <div class="banner">
+    <h2>Falling Rocks Rental Homes</h2>
+    <h3>Search For 1, 2, 3 & 4 Bed Rooms</h3>
+    <form>
+     <div class="form-inputs">
+      <div class="form-control">
+        <label for="apartment"> Apartments</label>
+        <select name="apartment">
+          <option value="none" selected>Apartment</option>
+          <option value="male">1 Bed Room</option>
+          <option value="female">2 Bed Room</option>
+          <option value="female">3 Bed Room</option>
+          <option value="female">4 Bed Room</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="location"> Location</label>
+        <select name="location">
+          <option value="none" selected>Location</option>
+          <option value="male">Winter Park</option>
+          <option value="female">Ankeny</option>
+          <option value="female">Grimes</option>
+          <option value="female">West Des Moines</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <div class="range_slide">
+          <label for="apartment">Price Range</label>
+          <input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value">
+          <p id="rangeValue">900</p>
+          </div>
+      </div>
+      <div id="banner-button-container">
+        <button>Search</button>
+      </div>
+     </div>
+    </form>
+  </div>
+  </div>
+  <!-- about -->
+  <div class="home-description">
+  <div class="inner-description">
+  <h3>Falling Rocks Apartments</h3>
+  <p>Falling Rocks apartments was founded in 2022 by a group of people that wanted to provide people with luxury apartments to call home. We have equipped our apartments with what we feel will make you enjoy living here. We value all residence around and all our clients. Please feel free to reach out for any questions or concerns.</p>
+  <div class="more-btn">
+    <button>Learn More</button>
+  </div>
+  </div>
+  </div>
+  <!-- featured -->
+  <div class="featured-wrapper">
+    <div class="featured-container">
+      <h3>Featured Homes</h3>
+    <div class="featured">
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+    </div>
+    <!-- <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+    </div> -->
+    <!-- <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/813692/pexels-photo-813692.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+    </div> -->
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+    </div>
+    </div>
+    <div class="more-btn">
+      <button>All Homes</button>
+    </div>
+    </div>
+  </div>
+  <!-- Reasons -->
+  <div class="reasons-container">
+  <div class="reasons">
+  <h3>Why Falling Rocks Homes?</h3>
+  <div class="reasons-flex">
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/5269418/pexels-photo-5269418.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+      <h4>Swimming Pool</h4>
+      <p>Three pools and two hot tubs for you. Both pools are open 24 hour and are heated in the evening.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/264258/pexels-photo-264258.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+        <h4>Basketball Court</h4>
+        <p>We understand how sometimes you just want to play. We have provided a large basketball court in the community.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+        <h4>Community Gym</h4>
+        <p>No need to spend your extra money getting a gym membership. Our gym is fully equipped with the machines.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/7516216/pexels-photo-7516216.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+        <h4>Dog Park</h4>
+        <p>We got your four legged friends a place where they can meet and play with other friends. Our park is open from 6am - 7pm.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+        <h4>Kids Play Ground</h4>
+        <p>Get them out to play and mingle with other kids. Our kids play ground is open from 7am to 6:30pm. Let them feel at home.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+        <h4>Grocery Store</h4>
+        <p>No going hungry. We are close to most of our local grocery stores. The stores are open from 6am to 11pm. You are all covered.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+        <h4>Parking</h4>
+        <p>The beautiful scenery around where you can also go and hike. Be ready for some outdoor fun.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="image-container">
+      <img src="https://images.pexels.com/photos/1098745/pexels-photo-1098745.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      </div>
+      <div class="card-info">
+        <h4>Transportation</h4>
+        <p>We are 10 Miles away from the main airport and other major roads. Catch your flight on time.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+<!-- Slider -->
+<div class="slider-slider">
+<h3>Our Blog</h3>
+  <div class="slider">
+    <div class="slider-container">
+      <img src="https://images.pexels.com/photos/298842/pexels-photo-298842.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+    </div>
+    <div class="slider-container">
+      <img src="https://images.pexels.com/photos/1486785/pexels-photo-1486785.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+    </div>
+    <div class="slider-container">
+      <img src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+    </div>
+    <div class="slider-container">
+      <img src="https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+    </div>
+  </div>
+</div>
+<!-- subscribe -->
+<div class="subscribe">
+<div class="form-container">
+  <h3>Subscribe To Our Newsletter</h3>
+  <form>
+  <input type="text" id="subscribe" name="subscribe" placeholder="Enter your Email"/>
+  <button>Subscribe</button>
+  </form>
+</div>
+</div>
+<!-- footer -->
+<footer>
+  <div class="footer-container">
+    <h3>Falling Rocks Homes</h3>
+    <hr>
+    <div class="inner-footer">
+    <div class="social">
+      <h4>Follow Us On:</h4>
+      <div class="social-links">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="story">
+      <h4>Our Story</h4>
+      <a href="#">How we started</a>
+      <a href="#">Our Sponsors</a>
+      <a href="#">Locations</a>
+    </div>
+    <div class="story">
+      <h4>Coming Soon</h4>
+      <a href="#">Pool Day</a>
+      <a href="#">Photoshoot</a>
+      <a href="#">Lunch hours</a>
+      <a href="#">Nwe equipments</a>
+    </div>
+    <div class="story">
+      <h4>Job Openings</h4>
+      <a href="#">Front desk</a>
+      <a href="#">Gym Cleaning</a>
+      <a href="#">Equipment supplies</a>
+    </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="copy-right">
+      <small>&copy;2021 Official Website of Falling Rocks Homes</small>
+      <div>
+        <a href="#">Legal Terms</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./jquery/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
