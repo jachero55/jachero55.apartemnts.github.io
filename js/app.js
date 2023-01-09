@@ -1,6 +1,7 @@
 class App {
   constructor() {
     this.slider = new Slider()
+    this.form = new Forms()
   }
 
   // Implement singleton

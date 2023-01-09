@@ -24,6 +24,33 @@
   </ul>
   </nav>
   </div>
+  <div class="appointment-form">
+  <button class="close"><i class="fa fa-times"></i></button>
+  <h4>Appointment</h4>
+    <form class="frm-appointment">
+    <div class="form-control">
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" placeholder="Your first name" />
+    </div>
+    <div class="form-control">
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Your last name" />
+    </div>
+    <div class="form-control">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Your email" />
+    </div>
+    <!-- input-group --> 
+    <div class="form-group">
+      <label for="party">Enter a date and time for your appointment:</label>
+    <input id="appointment" type="datetime-local" name="partydate" />
+  </div>
+    <button>Schedule Appointment</button>
+    </form>
+  </div>
+  <div class="appointment-booking">
+    <button><i class="fa fa-calendar"></i>Schedule Appointment</button>
+  </div>
   <!-- Hero -->
   <div class="home-hero">
   <div class="banner">
@@ -198,10 +225,10 @@
     </div>
     <div class="card">
       <div class="image-container">
-      <img src="https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      <img src="https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Kids Play Ground</h4>
+        <h4>Specious Rooms</h4>
         <p>Get them out to play and mingle with other kids. Our kids play ground is open from 7am to 6:30pm. Let them feel at home.</p>
         </div>
     </div>
@@ -334,10 +361,10 @@
   </div>
 </footer>
 
-
 <script src="./jquery/jquery.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/forms.js"></script>
 <script src="./js/app.js"></script>
 </body>
 </html>
