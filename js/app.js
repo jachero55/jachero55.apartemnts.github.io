@@ -2,6 +2,7 @@ class App {
   constructor() {
     this.slider = new Slider()
     this.form = new Forms()
+    this.modal = new Modal()
   }
 
   // Implement singleton

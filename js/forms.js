@@ -24,6 +24,7 @@ class Forms {
 
 	appointmentSubmit = (e) => {
 		const appointment = document.querySelector('.appointment-form');
+		const frm = document.querySelector('.appointment-form form');
 		document
 			.querySelector('.frm-appointment button')
 			.addEventListener('click', (e) => {
@@ -37,6 +38,7 @@ class Forms {
 				};
 				console.log(userPost);
 				appointment.classList.remove('show-form');
+				frm.reset('');
 			});
 	};
 }
