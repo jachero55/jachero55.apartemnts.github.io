@@ -1,6 +1,7 @@
 class Slider {
 	constructor() {
 		this.slider1();
+		// this.gallery()
 	}
 
 	slider1 = () => {
@@ -45,4 +46,5 @@ class Slider {
 			],
 		});
 	};
+  
 }

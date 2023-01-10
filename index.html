@@ -5,21 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Blue Ocean</title>
 </head>
 <body>
-  <div class="header">
+  <div class="header-container">
   <nav>
   <div id="logo">
-    <a href="/"><h1>BOCS</h1></a>
+    <a href="index.html"><h1>BOCS</h1></a>
   </div>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/">About</a></li>
-    <li><a href="/">Rent</a></li>
-    <li><a href="/">Gallery</a></li>
-    <li><a href="/">Residents</a></li>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="/">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="/">Appointments</a></li>
     <li><a href="/">Contact</a></li>
   </ul>
   </nav>
@@ -30,7 +31,7 @@
     <form class="frm-appointment">
     <div class="form-control">
       <label for="firstname">First Name</label>
-      <input type="text" name="firstname" id="firstname" placeholder="Your first name" />
+      <input type="text" name="firstname" id="firstname" placeholder="Your first name" autofocus />
     </div>
     <div class="form-control">
       <label for="lastname">Last Name</label>
@@ -45,11 +46,11 @@
       <label for="party">Enter a date and time for your appointment:</label>
     <input id="appointment" type="datetime-local" name="partydate" />
   </div>
-    <button>Schedule Appointment</button>
+    <button>Schedule Service</button>
     </form>
   </div>
   <div class="appointment-booking">
-    <button><i class="fa fa-calendar"></i>Schedule Appointment</button>
+    <button><i class="fa fa-calendar"></i>Schedule Service</button>
   </div>
   <!-- Appointment success -->
   <div class="success-modal-overlay">
@@ -59,7 +60,7 @@
         <h3>Success</h3>
       </div>
       <div class="success">
-        <h3>Your Appointment Details</h3>
+        <h3>Your Service Details</h3>
         <p>Full Name: <span>John Kennedy</span></p>
         <p>Email: <span>johnkennedy@yahoo.com</span></p>
         <p>Date: <span>01/12/2022</span></p>
@@ -77,31 +78,8 @@
     <form>
      <div class="form-inputs">
       <div class="form-control">
-        <label for="apartment"> Apartments</label>
-        <select name="apartment">
-          <option value="none" selected>Apartment</option>
-          <option value="male">1 Bed Room</option>
-          <option value="female">2 Bed Room</option>
-          <option value="female">3 Bed Room</option>
-          <option value="female">4 Bed Room</option>
-        </select>
-      </div>
-      <div class="form-control">
-        <label for="location"> Location</label>
-        <select name="location">
-          <option value="none" selected>Location</option>
-          <option value="male">Winter Park</option>
-          <option value="female">Ankeny</option>
-          <option value="female">Grimes</option>
-          <option value="female">West Des Moines</option>
-        </select>
-      </div>
-      <div class="form-control">
-        <div class="range_slide">
-          <label for="apartment">Price Range</label>
-          <input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value">
-          <p id="rangeValue">900</p>
-          </div>
+        <!-- <label for="location">Services</label> -->
+        <input type="text" name="service" id="service" placeholder="Search services" autofocus/>
       </div>
       <div id="banner-button-container">
         <button>Search</button>
@@ -110,117 +88,137 @@
     </form>
   </div>
   </div>
+  <!-- Specializes -->
+  <div class="specialize-container">
+  <div class="specialize">
+  <h4>Cars We Repair</h4>
+    <ul>
+      <li>BMW</li>
+      <li>AUDI</li>
+      <li>NISSAN</li>
+      <li>TOYOTA</li>
+      <li>SUBARU</li>
+      <li>KIA</li>
+      <li>HYUNDAI</li>
+      <li>HONDA</li>
+      <li>MAZDA</li>
+    </ul>
+  </div>
+  </div>
+  <!-- How to find Reach us -->
+  <div class="company-details-container">
+    <div class="company">
+      <ul>
+        <li>
+          <span><i class="fa fa-calendar"></i></span>
+          <p>Schedule Service</p>
+        </li>
+        <li>
+          <span><i class="fa fa-location-arrow"></i></span>
+          <p>Get Directions</p>
+        </li>
+        <li>
+          <span><i class="fa fa-phone"></i></span>
+          <p>+1 (435) 874 7635</p>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- about -->
   <div class="home-description">
-  <div class="inner-description">
-  <!-- <div class="love-hands">
-  <img src="https://images.pexels.com/photos/5340280/pexels-photo-5340280.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Person" />
-  </div> -->
-  <h3>Lets Get You Back On The Road</h3>
-  <p>Falling Rocks apartments was founded in 2022 by a group of people that wanted to provide people with luxury apartments to call home. We have equipped our apartments with what we feel will make you enjoy living here. We value all residence around and all our clients. Please feel free to reach out for any questions or concerns.</p>
-  <div class="more-btn">
-    <button>Learn More</button>
-  </div>
-  </div>
+    <div class="inner-description">
+      <div class="home-intro">
+        <h3>Lets Get You Back On The Road</h3>
+        <p>Falling Rocks apartments was founded in 2022 by a group of people that wanted to provide people with luxury apartments to call home. We have equipped our apartments with what we feel will make you enjoy living here. We value all residence around and all our clients. Please feel free to reach out for any questions or concerns.</p>
+        <div class="more-btn">
+          <button>Schedule Service</button>
+        </div>
+      </div>
+      <div class="service-hours">
+        <div class="hours">
+          <h3>Service Hours</h3>
+            <ul>
+              <li>
+                <span class="hours-text">Monday:</span>
+                <p class="hours-text">09:00 AM - 06:00 PM</p>
+              </li>
+              <li>
+                <span class="hours-text">Tuesday:</span>
+                <p class="hours-text">08:00 AM - 06:00 PM</p>
+              </li>
+              <li>
+                <span class="hours-text">Wednesday:</span>
+                <p class="hours-text">08:00 AM - 06:00 PM</p>
+              </li>
+              <li>
+                <span class="hours-text">Thursday:</span>
+                <p class="hours-text">08:00 AM - 06:00 PM</p>
+              </li>
+              <li>
+                <span class="hours-text">Friday:</span>
+                <p class="hours-text">08:00 AM - 06:00 PM</p>
+              </li>
+              <li>
+                <span class="hours-text">Saturday:</span>
+                <p class="hours-text">10:00 AM - 4:00 PM</p>
+              </li>
+              <li>
+                <span class="hours-text">Sunday:</span>
+                <p class="hours-text">Closed</p>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- featured -->
   <div class="featured-wrapper">
-    <div class="featured-container">
-      <h3>Gallery</h3>
-    <div class="featured">
-      <div class="card">
-        <div class="image-container">
-        <img src="https://images.pexels.com/photos/3894030/pexels-photo-3894030.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
-        <div class="featured-info">
-        <h4>2 Bedroom Classic</h4>
-        <div class="rates">
-        <div>
-          <span>Location</span>
-          <p><span>Des Moines</span></p>
-        </div>
-        <div>
-          <span>Property Type</span>
-          <p><span>Des Moines</span></p>
-        </div>
-        <div>
-          <span>Rate</span>
-          <p><span>starts: 2,000</span></p>
-        </div>
-        </div>
-        </div>
-        </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-      <img src="https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
-      <div class="featured-info">
-        <h4>3 Bedroom Classic</h4>
-        <div class="rates">
-        <div>
-          <span>Location</span>
-          <p><span>Urbandale</span></p>
-        </div>
-        <div>
-          <span>Property Type</span>
-          <p><span>Home</span></p>
-        </div>
-        <div>
-          <span>Rate</span>
-          <p><span>starts: 3,000</span></p>
-        </div>
-        </div>
-        </div>
+<div class="slider-slider">
+  <h3>Gallery</h3>
+    <div class="slider">
+      <div class="slider-container item">
+        <a href="https://images.pexels.com/photos/12590832/pexels-photo-12590832.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/12590832/pexels-photo-12590832.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        </a>
       </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-      <img src="https://images.pexels.com/photos/10126667/pexels-photo-10126667.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
-      <div class="featured-info">
-        <h4>4 Bedroom Classic</h4>
-        <div class="rates">
-        <div>
-          <span>Location</span>
-          <p><span>Ankeny</span></p>
-        </div>
-        <div>
-          <span>Property Type</span>
-          <p><span>Home</span></p>
-        </div>
-        <div>
-          <span>Rate</span>
-          <p><span>starts: 4,000</span></p>
-        </div>
-        </div>
-        </div>
+      <div class="slider-container item">
+        <a href="https://images.pexels.com/photos/2937422/pexels-photo-2937422.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/2937422/pexels-photo-2937422.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        </a>
       </div>
-    </div>
-    </div>
-    <div class="more-btn">
-      <button>Browse More</button>
-    </div>
+      <div class="slider-container item">
+        <a href="https://images.pexels.com/photos/8192663/pexels-photo-8192663.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/8192663/pexels-photo-8192663.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        </a>
+      </div>
+      <div class="slider-container item">
+        <a href="https://images.pexels.com/photos/221201/pexels-photo-221201.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/221201/pexels-photo-221201.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        </a>
+      </div>
     </div>
   </div>
+    </div>
   <!-- Reasons -->
   <div class="reasons-container">
   <div class="reasons">
-  <h3>Why Blue Ocean Homes?</h3>
+  <h3>Blue Ocean Services</h3>
   <div class="reasons-flex">
     <div class="card">
       <div class="image-container">
       <img src="https://images.pexels.com/photos/10912797/pexels-photo-10912797.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-      <h4>Swimming Pool</h4>
-      <p>Three pools and two hot tubs for you. Both pools are open 24 hour and are heated in the evening.</p>
+      <h4>Suspension Replacement</h4>
       </div>
+      <!-- <button>Schedule Appointment</button> -->
     </div>
     <div class="card">
       <div class="image-container">
-      <img src="https://images.pexels.com/photos/6044800/pexels-photo-6044800.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
+      <img src="https://images.pexels.com/photos/4956901/pexels-photo-4956901.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Elevator</h4>
-        <p>We understand how sometimes you just want to play. We have provided a large basketball court in the community.</p>
+        <h4>Air Filter</h4>
         </div>
     </div>
     <div class="card">
@@ -228,8 +226,7 @@
       <img src="https://images.pexels.com/photos/4022545/pexels-photo-4022545.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Transportation</h4>
-        <p>No need to spend your extra money getting a gym membership. Our gym is fully equipped with the machines.</p>
+        <h4>Break Disc Installation</h4>
         </div>
     </div>
     <div class="card">
@@ -237,8 +234,7 @@
       <img src="https://images.pexels.com/photos/1683406/pexels-photo-1683406.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Dog Park</h4>
-        <p>We got your four legged friends a place where they can meet and play with other friends. Our park is open from 6am - 7pm.</p>
+        <h4>Break Check</h4>
         </div>
     </div>
     <div class="card">
@@ -246,8 +242,7 @@
       <img src="https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Specious Rooms</h4>
-        <p>Get them out to play and mingle with other kids. Our kids play ground is open from 7am to 6:30pm. Let them feel at home.</p>
+        <h4>Oil Change</h4>
         </div>
     </div>
     <div class="card">
@@ -255,8 +250,7 @@
       <img src="https://images.pexels.com/photos/5158167/pexels-photo-5158167.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Grocery Store</h4>
-        <p>No going hungry. We are close to most of our local grocery stores. The stores are open from 6am to 11pm. You are all covered.</p>
+        <h4>Light Replacement</h4>
         </div>
     </div>
     <div class="card">
@@ -264,8 +258,7 @@
       <img src="https://images.pexels.com/photos/5158153/pexels-photo-5158153.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Parking</h4>
-        <p>The beautiful scenery around where you can also go and hike. Be ready for some outdoor fun.</p>
+        <h4>Tire Rotation</h4>
         </div>
     </div>
     <div class="card">
@@ -273,8 +266,7 @@
       <img src="https://images.pexels.com/photos/159293/car-engine-motor-clean-customized-159293.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="house" />
       </div>
       <div class="card-info">
-        <h4>Food</h4>
-        <p>We are 10 Miles away from the main airport and other major roads. Catch your flight on time.</p>
+        <h4>Engine cleaning</h4>
         </div>
     </div>
   </div>
@@ -289,7 +281,7 @@
       <img src="https://images.pexels.com/photos/5023544/pexels-photo-5023544.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
       <div class="slider-card-details">
       <h4>Food of the Week</h4>
-      <p>Eating healthy is in our menu and that's why we prepare a lot of healthy foods. We have you covered for your meals.</p>
+      <p>Eating healthy is in our menu and that's why we.</p>
       <span>01/23/2023</span>
       </div>
     </div>
@@ -297,7 +289,7 @@
       <img src="https://images.pexels.com/photos/4756888/pexels-photo-4756888.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
       <div class="slider-card-details">
         <h4>New Wheelchair</h4>
-        <p>Eating healthy is in our menu and that's why we prepare a lot of healthy foods. We have you covered for your meals.</p>
+        <p>Eating healthy is in our menu and that's why we.</p>
         <span>01/23/2023</span>
         </div>
     </div>
@@ -305,7 +297,7 @@
       <img src="https://images.pexels.com/photos/3806775/pexels-photo-3806775.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
       <div class="slider-card-details">
         <h4>Christmas Lights</h4>
-        <p>Eating healthy is in our menu and that's why we prepare a lot of healthy foods. We have you covered for your meals.</p>
+        <p>Eating healthy is in our menu and that's why we.</p>
         <span>01/23/2023</span>
         </div>
     </div>
@@ -313,7 +305,7 @@
       <img src="https://images.pexels.com/photos/4022543/pexels-photo-4022543.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
       <div class="slider-card-details">
         <h4>New Homes</h4>
-        <p>Eating healthy is in our menu and that's why we prepare a lot of healthy foods. We have you covered for your meals.</p>
+        <p>Eating healthy is in our menu and that's why we.</p>
         <span>01/23/2023</span>
         </div>
     </div>
@@ -380,6 +372,7 @@
 </footer>
 
 <script src="./jquery/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/forms.js"></script>

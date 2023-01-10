@@ -11,14 +11,14 @@ class Forms {
 		document
 			.querySelector('.appointment-booking button')
 			.addEventListener('click', () => {
-				appointment.classList.add('show-form');
+				appointment.classList.add('showForm');
 			});
 	};
 
 	closeAppointmentForm = () => {
 		const appointment = document.querySelector('.appointment-form');
 		document.querySelector('.close').addEventListener('click', () => {
-			appointment.classList.remove('show-form');
+			appointment.classList.remove('showForm');
 		});
 	};
 
@@ -37,7 +37,7 @@ class Forms {
 					date: document.querySelector('#appointment').value,
 				};
 				console.log(userPost);
-				appointment.classList.remove('show-form');
+				appointment.classList.remove('showForm');
 				frm.reset('');
 			});
 	};
