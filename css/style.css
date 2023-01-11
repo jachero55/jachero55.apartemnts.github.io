@@ -292,7 +292,7 @@ border-bottom-right-radius: 1rem;
 /* hero */
 .home-hero, .about-hero {
 margin-top: 80px;
-background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://images.pexels.com/photos/6872163/pexels-photo-6872163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://images.pexels.com/photos/3849549/pexels-photo-3849549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 height: 60vh;
 background-position: center;
 background-repeat: no-repeat;
