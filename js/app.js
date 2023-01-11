@@ -3,6 +3,7 @@ class App {
     this.slider = new Slider()
     this.form = new Forms()
     this.modal = new Modal()
+    this.map = new MapLocation()
   }
 
   // Implement singleton

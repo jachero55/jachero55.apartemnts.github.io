@@ -41,6 +41,30 @@
       <label for="email">Email</label>
       <input type="email" name="email" id="email" placeholder="Your email" />
     </div>
+    <div class="form-control">
+      <label for="car">Car Make</label>
+      <select name="car" id="car">
+        <option value="Bmw" selected>BMW</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Mercedes">Mercedes Benz</option>
+        <option value="Audi">Audi</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Kia">Kia</option>
+        <option value="Honda">Honda</option>
+      </select>
+    </div>
+    <div class="form-control">
+      <label for="color">Color</label>
+      <select name="color" id="color">
+        <option value="Green" selected>Green</option>
+        <option value="Black">Black</option>
+        <option value="Red">Red</option>
+        <option value="White">White</option>
+        <option value="Blue">Blue</option>
+        <option value="Silver">Silver</option>
+      </select>
+    </div>
     <!-- input-group --> 
     <div class="form-group">
       <label for="party">Enter a date and time for your appointment:</label>
@@ -50,25 +74,11 @@
     </form>
   </div>
   <div class="appointment-booking">
-    <button><i class="fa fa-calendar"></i>Schedule Service</button>
+    <button class="schedule-btn"><i class="fa fa-calendar"></i>Schedule Service</button>
   </div>
   <!-- Appointment success -->
   <div class="success-modal-overlay">
-    <div class="success-container">
-      <div class="success-top">
-        <span><i class="fa fa-check"></i></span>
-        <h3>Success</h3>
-      </div>
-      <div class="success">
-        <h3>Your Service Details</h3>
-        <p>Full Name: <span>John Kennedy</span></p>
-        <p>Email: <span>johnkennedy@yahoo.com</span></p>
-        <p>Date: <span>01/12/2022</span></p>
-      </div>
-      <div class="success-footer">
-        <p>Confirmation sent to your email</p>
-      </div>
-    </div>
+    <!-- Insert data here -->
   </div>
   <!-- Hero -->
   <div class="home-hero">
@@ -109,13 +119,13 @@
   <div class="company-details-container">
     <div class="company">
       <ul>
-        <li>
+        <li class="schedule-btn">
           <span><i class="fa fa-calendar"></i></span>
           <p>Schedule Service</p>
         </li>
-        <li>
+        <li class="my-location">
           <span><i class="fa fa-location-arrow"></i></span>
-          <p>Get Directions</p>
+          <p>Find Us</p>
         </li>
         <li>
           <span><i class="fa fa-phone"></i></span>
@@ -131,7 +141,7 @@
         <h3>Lets Get You Back On The Road</h3>
         <p>Falling Rocks apartments was founded in 2022 by a group of people that wanted to provide people with luxury apartments to call home. We have equipped our apartments with what we feel will make you enjoy living here. We value all residence around and all our clients. Please feel free to reach out for any questions or concerns.</p>
         <div class="more-btn">
-          <button>Schedule Service</button>
+          <button class="schedule-btn">Schedule Service</button>
         </div>
       </div>
       <div class="service-hours">
@@ -177,23 +187,23 @@
   <h3>Gallery</h3>
     <div class="slider">
       <div class="slider-container item">
-        <a href="https://images.pexels.com/photos/12590832/pexels-photo-12590832.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/12590832/pexels-photo-12590832.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <a href="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
         </a>
       </div>
       <div class="slider-container item">
-        <a href="https://images.pexels.com/photos/2937422/pexels-photo-2937422.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/2937422/pexels-photo-2937422.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <a href="https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
         </a>
       </div>
       <div class="slider-container item">
-        <a href="https://images.pexels.com/photos/8192663/pexels-photo-8192663.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/8192663/pexels-photo-8192663.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <a href="https://images.pexels.com/photos/8065769/pexels-photo-8065769.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/8065769/pexels-photo-8065769.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
         </a>
       </div>
       <div class="slider-container item">
-        <a href="https://images.pexels.com/photos/221201/pexels-photo-221201.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/221201/pexels-photo-221201.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <a href="https://images.pexels.com/photos/11277766/pexels-photo-11277766.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
+        <img src="https://images.pexels.com/photos/11277766/pexels-photo-11277766.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
         </a>
       </div>
     </div>
@@ -294,7 +304,7 @@
         </div>
     </div>
     <div class="slider-container">
-      <img src="https://images.pexels.com/photos/3806775/pexels-photo-3806775.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+      <img src="https://images.pexels.com/photos/207498/pexels-photo-207498.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
       <div class="slider-card-details">
         <h4>Christmas Lights</h4>
         <p>Eating healthy is in our menu and that's why we.</p>
@@ -320,6 +330,13 @@
   <button>Subscribe</button>
   </form>
 </div>
+</div>
+<!-- map -->
+<div class="map-overlay">
+  <div class="map">
+  <button class="map-btn"><i class="fa fa-times"></i></button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95304.84079306701!2d-93.67640763712673!3d41.71455687926245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee8513f1d17fc9%3A0x85b00ee7d535dcec!2sAnkeny%2C%20IA!5e0!3m2!1sen!2sus!4v1673427038669!5m2!1sen!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 </div>
 <!-- footer -->
 <footer>
@@ -377,6 +394,7 @@
 <script src="./js/slider.js"></script>
 <script src="./js/forms.js"></script>
 <script src="./js/modal.js"></script>
+<script src="./js/map.js"></script>
 <script src="./js/app.js"></script>
 </body>
 </html>
