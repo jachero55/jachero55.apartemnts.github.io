@@ -12,7 +12,6 @@ box-sizing: border-box;
  --bodyBg: #f2f2f2;
  --smFontSize: 16px;
  --lgFontSize: 18px;
- --hdColor: #BFAB25;
  --btnBg: #111;
  --btnBRadius: 2rem;
  --btnHoverBg: #BFAB25;
@@ -30,9 +29,8 @@ html {
 body {
 background-color: var(--bodyBg);
 position: relative;
-  min-height: 100%;
-  padding-bottom: 460px;
-/* font-family: 'IBM Plex Serif', serif; */
+min-height: 100%;
+padding-bottom: 460px;
 font-family: 'Montserrat', sans-serif;
 line-height: 3rem;
 scroll-behavior: smooth;
@@ -319,11 +317,7 @@ object-fit: cover;
 }
 
 .banner {
-/* display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column; */
-width: 55%;
+width: 45%;
 }
 
 .banner h2 {
@@ -351,21 +345,21 @@ color: #f2f2f2;
 .banner form button {
   padding: 1rem 2rem;
   font-family: 'Montserrat', sans-serif;
-  background-color: #022050;
+  background-color: var(--primaryColor);
   border: none;
-  color: #ffffff;
-  font-size: 1.8rem;
-  border-radius: .5rem;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
+  color: var(--secondaryColor);
+  font-size: 2rem;
+  border-radius: 0rem;
+  -webkit-border-radius: 0rem;
+  -moz-border-radius: 0rem;
+  -ms-border-radius: 0rem;
+  -o-border-radius: 0rem;
 }
 
 .banner form .form-inputs {
 display: flex;
 align-items: center;
-gap: 2rem;
+/* gap: 2rem; */
 }
 
 .form-control {
@@ -396,7 +390,7 @@ font-size: 1.8rem;
 .specialize-container {
 width: 100%;
 padding: 2rem 0;
-background-color: #111;
+background-color: #022050;
 }
 
 .specialize-container .specialize {
@@ -554,9 +548,19 @@ grid-gap: 1rem;
 height: 200px;
 object-fit: cover;
 display: block;
+border-radius: var(--imgBRadius); -webkit-border-radius: var(--imgBRadius); -moz-border-radius: var(--imgBRadius); -ms-border-radius: var(--imgBRadius); -o-border-radius: var(--imgBRadius);
 }
 
-.reasons-flex .card { position: relative; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; cursor: pointer;
+.reasons-flex .card { position: relative; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; cursor: pointer; border-radius: var(--imgBRadius); -webkit-border-radius: var(--imgBRadius); -moz-border-radius: var(--imgBRadius); -ms-border-radius: var(--imgBRadius); -o-border-radius: var(--imgBRadius); transition: transform .5s ease-in-out; -webkit-transition: transform .5s ease-in-out; -moz-transition: transform .5s ease-in-out; -ms-transition: transform .5s ease-in-out; -o-transition: transform .5s ease-in-out;
+}
+
+.reasons-flex .card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  z-index: 9;
 }
 
 .reasons-flex .card .card-info {
@@ -568,6 +572,7 @@ background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
 display: flex;
 justify-content: center;
 align-items: center;
+border-radius: var(--imgBRadius); -webkit-border-radius: var(--imgBRadius); -moz-border-radius: var(--imgBRadius); -ms-border-radius: var(--imgBRadius); -o-border-radius: var(--imgBRadius);
 }
 
 .reasons-flex .card .card-info h4 { font-size: 1.5rem; text-align: center; font-weight: bold; width: 100%; margin: 0 2rem; color: #fff; background-color: #011638; text-transform: uppercase; padding: .3rem 0; 
@@ -575,14 +580,10 @@ align-items: center;
 
 .reasons-flex .card .card-info p {
 padding: 2rem;
-/* text-align: justify;
-text-justify: inter-word; */
 font-size: 18px;
 }
 
-
 /* slider */
-
 .slider-slider  {
   padding: 50px 0;
   min-height: 60vh;
@@ -608,15 +609,28 @@ position: relative;
 
 .slider-container {
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 1rem;
   position: relative;
   cursor: pointer;
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -ms-transition: transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+}
+
+.slider-container:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  z-index: 9;
 }
 
 .slider-card-details {
   position: absolute;
   background: linear-gradient(rgba(2, 32, 80, .9), rgba(2, 32, 80, .9));
-  /* background-color: #022050; */
   left:0;
   right:0;
   bottom:0;
