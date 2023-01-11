@@ -822,9 +822,10 @@ footer {
     display: block;
     text-decoration: none;
     color: #5a5a5a;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 3rem;
     text-align: center;
+    font-weight: bold;
   }
   
   .social-links {
