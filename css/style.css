@@ -81,6 +81,7 @@ top: 0;
 }
 
 .header-container nav {
+position: relative;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -107,33 +108,88 @@ ul li {
   list-style-type: none;
 }
 
-li a {
+li a, .drop-down a {
 text-decoration: none;
 color: #3A7CA5;
 font-size: 1.5rem;
 font-weight: bold;
 text-transform: uppercase;
+display: block;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 li .active {
 color: #BFAB25;
 }
 
+.drop-down a {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+}
+
+.drop-down-list {
+  position: absolute;
+  background-color: #ffffff;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  left: 30%;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 350ms;
+  -webkit-transition: 350ms;
+  -moz-transition: 350ms;
+  -ms-transition: 350ms;
+  -o-transition: 350ms;
+}
+
+.drop-down:hover .drop-down-list {
+  position: absolute;
+  background-color: #ffffff;
+  top: 80px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  left: 30%;
+  right: 0;
+  height: auto;
+  transition: 850ms;
+  -webkit-transition: 850ms;
+  -moz-transition: 850ms;
+  -ms-transition: 850ms;
+  -o-transition: 850ms;
+}
+
+.drop-down-list li { font-size: 1.5rem; background-color: #2F6690; color: #ffffff; border-radius: 1rem; -webkit-border-radius: 1rem; -moz-border-radius: 1rem; -ms-border-radius: 1rem; -o-border-radius: 1rem;
+cursor: pointer;
+padding: .5rem 1rem;
+}
+
 /* appointment */
 .appointment-booking {
-position: absolute;
-left: 0;
-bottom: 0;
-z-index: 4;
-position: fixed;
-margin: 3rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  position: fixed;
+  margin: 3rem;
 }
 
 .appointment-form { position: absolute; bottom: 0; left: -100%; z-index: 99999999; position: fixed; margin: 0 0 2rem 2rem; border-radius: 1rem; -webkit-border-radius: 1rem; -moz-border-radius: 1rem; -ms-border-radius: 1rem; -o-border-radius: 1rem; transition: 850ms; -webkit-transition: 850ms; -moz-transition: 850ms; -ms-transition: 850ms; -o-transition: 850ms; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
 .appointment-form .close {
-color: #2F6690;
+color: #fff;
 font-size: 2rem;
 background: transparent;
 float: right;
@@ -142,7 +198,7 @@ padding: 1rem 2rem 0 0;
 }
 
 .appointment-form h4 {
-color: #111;
+color: #BFAB25;
 font-size: 1.8rem;
 margin-left: 2rem;
 font-weight: bold;
@@ -173,7 +229,7 @@ padding: 1rem 0;
 color: #f2f2f2;
 }
 
-.appointment-form form input {
+.appointment-form form input, select {
 width: 100%;
 padding: 1rem;
 }
@@ -458,7 +514,12 @@ padding-bottom: var(--lgSectionPadding);
 
 .inner-description .home-intro {
   flex: 3;
-  margin-left: 2rem;
+  transform: skewX(8deg);
+  margin-left: 5rem;
+  -webkit-transform: skewX(8deg);
+  -moz-transform: skewX(8deg);
+  -ms-transform: skewX(8deg);
+  -o-transform: skewX(8deg);
 }
 
 .home-intro button { 
@@ -916,8 +977,8 @@ footer {
   .social-links a {
     background-color: #111;
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
