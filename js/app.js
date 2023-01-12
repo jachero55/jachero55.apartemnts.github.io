@@ -6,7 +6,7 @@ class App {
 		this.services = new Services();
 		this.gallery = new Gallery();
 		this.blog = new Blog();
-		// this.map = new MapLocation()
+		this.scrollTop = new ScrollTop();
 	}
 
 	// Implement singleton
