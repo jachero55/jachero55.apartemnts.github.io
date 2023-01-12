@@ -133,7 +133,7 @@ margin: 3rem;
 }
 
 .appointment-form .close {
-color: #011638;
+color: #2F6690;
 font-size: 2rem;
 background: transparent;
 float: right;
@@ -151,11 +151,12 @@ font-weight: bold;
 .appointment-form {
 width: 20%;
 background-color: #fff;
+padding: 2rem;
 }
 
 .showForm {
   width: 20%;
-  background-color: #fff;
+  background-color: #3A7CA5;
   left: 0;
   transition: 350ms;
   -webkit-transition: 350ms;
@@ -164,17 +165,12 @@ background-color: #fff;
   -o-transition: 350ms;
 }
 
-.appointment-form form {
-width: 100%;
-padding: 2rem;
-}
-
 .appointment-form form label {
 display: block;
 font-size: 1.8rem;
 font-weight: bold;
 padding: 1rem 0;
-color: #00487C;
+color: #f2f2f2;
 }
 
 .appointment-form form input {
@@ -493,6 +489,7 @@ font-size: 1.5rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .hours ul li {
@@ -685,7 +682,7 @@ padding: 1rem 0;
 
 .slider-card-details {
   position: absolute;
-  background: linear-gradient(rgba(47, 102, 144, .9), rgba(47, 102, 144, .9));
+  background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
   left:0;
   right:0;
   bottom:0;
@@ -693,7 +690,6 @@ padding: 1rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #fff;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -709,7 +705,7 @@ padding: 1rem 0;
 }
 
 .slider-card-details p {
-  color: #fff;
+  color: #5a5a5a;
   font-size: 1.6rem;
 }
 
@@ -772,7 +768,7 @@ color: #ffffff;
 }
 
 .subscribe {
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(https://images.pexels.com/photos/3076820/pexels-photo-3076820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background: linear-gradient(rgba(47, 102, 144, .5), rgba(47, 102, 144, .5)), url(https://images.pexels.com/photos/2631489/pexels-photo-2631489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -895,17 +891,16 @@ footer {
   .inner-footer h4{
     font-size: 1.7rem;
     margin: 2rem 0 1rem 0;
-    color: #011638;
+    color: #2F6690;
     font-weight: bold;
   }
   
   .story a {
     display: block;
     text-decoration: none;
-    color: #5a5a5a;
+    color: #BFAB25;
     font-size: 1.6rem;
     line-height: 3rem;
-    text-align: center;
     font-weight: bold;
   }
   
