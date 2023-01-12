@@ -1,0 +1,100 @@
+{
+"services": [
+ {
+  "id": 1,
+  "title": "SUSPENSION REPLACEMENT",
+  "image": "https://images.pexels.com/photos/10912797/pexels-photo-10912797.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ },
+ {
+  "id": 2,
+  "title": "AIR FILTER",
+  "image": "https://images.pexels.com/photos/4956901/pexels-photo-4956901.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ },
+ {
+  "id": 3,
+  "title": "BREAK DISC INSTALLATION",
+  "image": "https://images.pexels.com/photos/4022545/pexels-photo-4022545.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ },
+ {
+  "id": 4,
+  "title": "BREAK CHECK",
+  "image": "https://images.pexels.com/photos/1683406/pexels-photo-1683406.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ },
+ {
+  "id": 5,
+  "title": "OIL CHANGE",
+  "image": "https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ },
+ {
+  "id": 6,
+  "title": "LIGHT REPLACEMENT",
+  "image": "https://images.pexels.com/photos/5158167/pexels-photo-5158167.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ },
+ {
+  "id": 7,
+  "title": "TIRE ROTATION",
+  "image": "https://images.pexels.com/photos/5158153/pexels-photo-5158153.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ },
+ {
+  "id": 8,
+  "title": "ENGINE CLEANING",
+  "image": "https://images.pexels.com/photos/159293/car-engine-motor-clean-customized-159293.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "description":""
+ }
+],
+"blog":[
+{
+  "id": 1,
+  "title": "Car Restoration",
+  "description":"It doesn't have to take a lot of money to achieve it.",
+  "image": "https://images.pexels.com/photos/5023544/pexels-photo-5023544.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "date": "12/23/2022"
+},
+{
+  "id": 2,
+  "title": "Your Garage",
+  "description":"All you need to know about your garage care and more.",
+  "image": "https://images.pexels.com/photos/4756888/pexels-photo-4756888.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "date": "12/23/2022"
+},
+{
+  "id": 3,
+  "title": "Engine Car",
+  "description":"Are you taking care of your engine? Here are different ways on how to.",
+  "image": "https://images.pexels.com/photos/207498/pexels-photo-207498.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "date": "01/10/2023"
+},
+{
+  "id": 4,
+  "title": "New Brakes",
+  "description":"Sometimes we all just need new breaks. Here is a look at some.",
+  "image": "https://images.pexels.com/photos/4022543/pexels-photo-4022543.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "date": "12/23/2022"
+}
+],
+"gallery":[
+{
+    "id": 1,
+    "image": "https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+  "id": 2,
+  "image": "https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+  "id": 3,
+  "image": "https://images.pexels.com/photos/8065769/pexels-photo-8065769.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+  "id": 4,
+  "image": "https://images.pexels.com/photos/11277766/pexels-photo-11277766.jpeg?auto=compress&cs=tinysrgb&w=1600"
+}
+]
+}
