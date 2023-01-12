@@ -7,10 +7,11 @@ class Services {
 
 	getServices = async () => {
 		try {
-			let response = await fetch('./data.json');
+			let response = await fetch(
+				'https://raw.githubusercontent.com/jachero55/jachero55.apartemnts.github.io/main/js/data.json'
+			);
 			let data = await response.json();
-			console.log('Getting Services', data);
-			let services = data.services;
+			let services = await data.services;
 			this.ui.displayServices(services);
 		} catch (e) {
 			console.log(e);
