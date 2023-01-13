@@ -108,6 +108,13 @@ ul li {
   list-style-type: none;
 }
 
+#menu-btn {
+color: #111;
+font-size: 2.5rem;
+background: transparent;
+display: none;
+}
+
 li a, .drop-down a {
 text-decoration: none;
 color: #3A7CA5;
@@ -349,7 +356,7 @@ border-bottom-right-radius: 1rem;
 .home-hero, .about-hero {
 margin-top: 80px;
 background: linear-gradient(rgba(47, 102, 144, .6), rgba(47, 102, 144, .6)), url(https://images.pexels.com/photos/3849549/pexels-photo-3849549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-height: 60vh;
+height: 35vh;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -373,7 +380,7 @@ object-fit: cover;
 }
 
 .banner {
-width: 45%;
+width: 92%;
 }
 
 .banner h2 {
@@ -382,38 +389,38 @@ width: 45%;
 }
 
 .banner h2, h3 {
-font-size: 6rem;
+font-size: 2rem;
 text-align: center;
-padding: 2rem 0;
+/* padding: 2rem 0; */
 text-transform: uppercase;
 font-family: 'Source Sans Pro', sans-serif;
 letter-spacing: .2rem;
 }
 
 .banner h3 {
-font-size: 3rem;
+font-size: 1.5rem;
 color: #f2f2f2;
 }
 
 .subscribe-form {
-width: 45% !important;
+width: 100% !important;
 margin: 0 auto;
 /* background: transparent !important; */
 }
 
-.subscribe-form #search-btn {
-font-size: 1.7rem;
-}
+/* .subscribe-form #search-btn {
+font-size: 1.3rem;
+} */
 
 .subscribe-form input {
-  padding: .8rem 3rem !important;
+  padding: .5rem 3rem !important;
 }
 
 .search-form {
   border: none;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%;
   /* background-color: red; */
 }
@@ -428,13 +435,13 @@ width: 100%;
   border: none;
   width: 100%;
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-top-left-radius: 5rem;
   border-bottom-left-radius: 5rem;
 }
 #search-btn {
   border-radius: 0;
-  padding: 1.2rem 3rem;
+  padding: 1rem 3rem;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -444,7 +451,7 @@ width: 100%;
   border-left: none;
   border-top-right-radius: 5rem;
   border-bottom-right-radius: 5rem;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   background-color: #111;
 }
 
@@ -460,6 +467,7 @@ background-color: #2F6690;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -492,18 +500,15 @@ padding-top: var(--lgSectionPadding);
 padding-bottom: var(--lgSectionPadding);
 }
 .service-hours-section .inner-description {
-  width: 60vw;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
+  width: 92vw;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
-  transform: skew(-8deg);
-  -webkit-transform: skew(-8deg);
-  -moz-transform: skew(-8deg);
-  -ms-transform: skew(-8deg);
-  -o-transform: skew(-8deg);
+  transform: skew(0deg);
+  -webkit-transform: skew(0deg);
+  -moz-transform: skew(0deg);
+  -ms-transform: skew(0deg);
+  -o-transform: skew(0deg);
 }
 
 .inner-description h3 {
@@ -1033,4 +1038,111 @@ footer {
    -moz-transition: .5s ease-in-out;
    -ms-transition: .5s ease-in-out;
    -o-transition: .5s ease-in-out;
+}
+
+
+/* media */
+
+/* media */
+@media screen and (min-width: 768px) {
+  .home-hero, .about-hero {
+    margin-top: 80px;
+    background: linear-gradient(rgba(47, 102, 144, .6), rgba(47, 102, 144, .6)), url(https://images.pexels.com/photos/3849549/pexels-photo-3849549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+    }
+    
+  .banner {
+    width: 45%;
+    }
+    
+    .banner h2, h3 {
+    font-size: 6rem;
+    text-align: center;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: .2rem;
+    }
+    
+    .banner h3 {
+    font-size: 3rem;
+    color: #f2f2f2;
+    }
+    
+    .subscribe-form {
+    width: 45% !important;
+    margin: 0 auto;
+    /* background: transparent !important; */
+    }
+    
+    .subscribe-form #search-btn {
+      font-size: 1.7rem;
+      }
+      
+      .subscribe-form input {
+        padding: .8rem 3rem !important;
+      }
+      
+      .search-form {
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+        width: 100%;
+        /* background-color: red; */
+      }
+      
+      .search-form .form-group {
+      width: 100%;
+      }
+      
+      .search-form input {
+        border-right: none;
+        padding: 1rem 3rem;
+        border: none;
+        width: 100%;
+        display: block;
+        font-size: 2rem;
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+      }
+      #search-btn {
+        border-radius: 0;
+        padding: 1.2rem 3rem;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        color: var(--secondaryColor);
+        border-left: none;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+        font-size: 2.3rem;
+        background-color: #111;
+      }
+      
+      .service-hours-section .inner-description {
+        width: 60vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        transform: skew(-8deg);
+        -webkit-transform: skew(-8deg);
+        -moz-transform: skew(-8deg);
+        -ms-transform: skew(-8deg);
+        -o-transform: skew(-8deg);
+      }
+      
 }
