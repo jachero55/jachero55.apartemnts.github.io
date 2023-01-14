@@ -604,9 +604,9 @@ color: var(--black);
   color: #ffffff;
   border: 1px solid #fff;
   background-color: #111;
-  height: 50px;
-  width: 50px;
-  font-size: 3rem !important;
+  height: 30px;
+  width: 30px;
+  font-size: 2rem !important;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1092,5 +1092,11 @@ footer {
     
     .showForm {
       width: 25%;
+    }
+    
+    .scroll-top button {
+      height: 50px;
+      width: 50px;
+      font-size: 3rem !important;
     }
 }
