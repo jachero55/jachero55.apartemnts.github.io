@@ -207,6 +207,8 @@ nav ul li a {
     margin-bottom: 2rem;
     font-family: var(--hdFont);
     text-transform: uppercase;
+    color: var(--lightYellow);
+    text-shadow: 2px 2px 1px  var(--lightBlue);
   }
   
   .banner .search-form, .subscribe .search-form {
@@ -272,24 +274,6 @@ nav ul li a {
       font-size: 1.3rem;
     }
 
-/* Appointment modal */
-.appointment-form {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: none;
-}
-
-.frm-appointment {
-  width: 100%;
-  background-color: var(--white);
-}
-
-.appointment-booking {
-  position: absolute;
-  bottom: 0;
-}
-
 /* open section hour */
 .service-hours-section {
   padding-top: var(--smSectionPadding);
@@ -340,6 +324,11 @@ nav ul li a {
   margin: 0 auto;
   margin-top: 1rem;
   background-color: var(--white);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .service-hours {
@@ -350,6 +339,8 @@ nav ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .home-intro .more-btn {
@@ -527,6 +518,19 @@ nav ul li a {
     border-bottom-right-radius: 1rem;
   }
   
+  .blog-section h4 {
+    font-size: 1.5rem;
+  }
+  
+  .blog-section p {
+    font-size: 1.5rem;
+  }
+  
+  .blog-section span {
+  font-size: 1.3rem;
+  color: var(--darkBlue);
+  }
+  
   .blog-section .slider-container img {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -572,8 +576,8 @@ position: relative;
 }
 
 .map iframe {
-  width:"100%"; 
-  height:"500";
+  width: 100%; 
+  height: 400px;
   border:0;
 }
 
@@ -584,7 +588,7 @@ position: absolute;
 right: 0;
 margin: 0rem 3rem 3rem 0rem;
 top: 0;
-color: #011638;
+color: var(--black);
 }
 
 /* Scroll top */
@@ -636,7 +640,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   
   .inner-footer h4{
@@ -710,6 +714,87 @@ footer {
   .gallery h3, .blog-section h3 {
     padding-bottom: 0;
     }
+    
+    /* appointment */
+.appointment-booking {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  position: fixed;
+  margin: 3rem;
+}
+
+.appointment-form { position: absolute; bottom: 0; left: -100%; z-index: 99999999; position: fixed; margin: 0 0 2rem 2rem; border-radius: 1rem; -webkit-border-radius: 1rem; -moz-border-radius: 1rem; -ms-border-radius: 1rem; -o-border-radius: 1rem; transition: 850ms; -webkit-transition: 850ms; -moz-transition: 850ms; -ms-transition: 850ms; -o-transition: 850ms; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.appointment-form .close {
+color: #fff;
+font-size: 2rem;
+background: transparent;
+float: right;
+clear: both;
+padding: 1rem 2rem 0 0;
+}
+
+.appointment-form h4 {
+color: #BFAB25;
+font-size: 1.8rem;
+margin-left: 2rem;
+font-weight: bold;
+}
+
+.appointment-form {
+width: 90%;
+background-color: #fff;
+padding: 2rem;
+}
+
+.showForm {
+  width: 90%;
+  background-color: #3A7CA5;
+  left: 0;
+  transition: 350ms;
+  -webkit-transition: 350ms;
+  -moz-transition: 350ms;
+  -ms-transition: 350ms;
+  -o-transition: 350ms;
+}
+
+.appointment-form form label {
+display: block;
+/* font-size: 1.8rem; */
+font-weight: bold;
+padding: 1rem 0;
+color: #f2f2f2;
+}
+
+.appointment-form form input, select {
+width: 100%;
+padding: 1rem;
+}
+
+.appointment-form form button { 
+color: #ffffff; 
+/* font-size: 1.6rem;  */
+/* padding: 1rem 2rem;  */
+border-radius: 1rem; -webkit-border-radius: 1rem; -moz-border-radius: 1rem; -ms-border-radius: 1rem; -o-border-radius: 1rem;
+margin-top: 2rem;
+}
+
+.appointment-booking button {
+  color: #ffffff;
+  /* font-size: 1.7rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
   
 
 @media screen and (min-width: 768px) {
@@ -841,6 +926,12 @@ footer {
     padding-bottom: var(--lgSectionPadding);
   }
   
+  .service-hours {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
   .company-details-container ul {
     gap: 1.5rem;
   }
@@ -859,7 +950,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     width: 60vw;
     margin-top: 2rem;
-    background-color: var(--white);
   }
   
   .home-intro, .open-hours {
@@ -946,7 +1036,8 @@ footer {
 }
 
 .map iframe {
-  height:"600";
+  height: 600px;
+  width: 100%;
 }
 
 footer {
@@ -981,4 +1072,13 @@ footer {
   .scroll-top {
     display: block;
   }
+  
+  /* Appointment form */
+  .appointment-form {
+    width: 25%;
+    }
+    
+    .showForm {
+      width: 25%;
+    }
 }
