@@ -422,7 +422,7 @@ nav ul li a {
     border: 1px solid #ffffff;
   }
   
-  .center .left-arrow, .gallery-section .left-arrow {
+  .center .fa-arrow-left-long, .gallery-section .fa-arrow-left-long {
     position: absolute;
     top: 40%;
     left: 5px;
@@ -430,14 +430,14 @@ nav ul li a {
     text-align: center;
     z-index: 3;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--lightYellow);
     background-color: #111;
     border-radius: .3rem;
     padding: .5rem;
   }
   
-  .center .right-arrow, .gallery-section .right-arrow {
-  color: #ffffff;
+  .center .fa-arrow-right-long, .gallery-section .fa-arrow-right-long {
+    color: var(--lightYellow);
     position: absolute;
     top: 40%;
     right: 5px;
@@ -445,7 +445,6 @@ nav ul li a {
     text-align: center;
     z-index: 3;
     cursor: pointer;
-    color: #ffffff;
     background-color: #111;
     border-radius: .3rem;
     padding: .5rem;
@@ -1013,6 +1012,19 @@ margin-top: 2rem;
   padding-top: var(--lgSectionPadding);
   padding-bottom: var(--lgSectionPadding);
 }
+
+.blog-section h4 {
+  font-size: 1.7rem !important;
+}
+
+.blog-section p {
+  font-size: 1.8rem !important;
+}
+
+.blog-section span {
+font-size: 1.5rem;
+}
+
 
 .slider-container:hover {
   transform: scale(1.1);

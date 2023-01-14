@@ -14,8 +14,8 @@ class Slider {
       cssEase: 'linear',
 		  infinite: true,
 		  autoplaySpeed: 3000,
-		  prevArrow: `<i class="fa fa-chevron-left left-arrow"></i>`,
-		  nextArrow: `<i class="fa fa-chevron-right right-arrow"></i>`,
+		  prevArrow: `<i class="fa-solid fa-arrow-left-long"></i>`,
+		  nextArrow: `<i class="fa-solid fa-arrow-right-long"></i>`,
       responsive: [
         {
           breakpoint: 768,
