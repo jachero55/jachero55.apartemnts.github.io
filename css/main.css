@@ -519,15 +519,15 @@ nav ul li a {
   }
   
   .blog-section h4 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   
   .blog-section p {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   
   .blog-section span {
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
   color: var(--darkBlue);
   }
   
