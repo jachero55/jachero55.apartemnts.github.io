@@ -595,6 +595,7 @@ color: #011638;
   z-index: 12;
   position: fixed;
   padding: 0px 30px 50px 0px;
+  display: none;
 }
 .scroll-top button {
   color: #ffffff;
@@ -975,5 +976,9 @@ footer {
   }
   .inner-footer {
     margin-bottom: 3rem;
+  }
+  
+  .scroll-top {
+    display: block;
   }
 }
