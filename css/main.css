@@ -38,7 +38,7 @@ body {
 background-color: var(--lightGray);
 position: relative;
 min-height: 100%;
-padding-bottom: 360px;
+padding-bottom: 432px;
 font-family: var(--bdFontFamily);
 line-height: 3rem;
 scroll-behavior: smooth;
@@ -615,18 +615,15 @@ footer {
   width: 100%;
   bottom: 0;
   position: absolute;
+  padding-top: var(--smSectionPadding);
+  padding-bottom: var(--smSectionPadding);
 }
 
 .footer-container,.copy-right {
-  width: 65vw;
+  width: 92vw;
   margin: 0 auto;
-  padding-top: var(--lgSectionPadding);
-  padding-bottom: var(--lgSectionPadding);
-  }
-  
-  .footer-container h3 {
-  font-size: 3rem;
-  color: #BFAB25;
+  /* padding-top: var(--smSectionPadding);
+  padding-bottom: var(--smSectionPadding); */
   }
   
   .inner-footer {
@@ -634,12 +631,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
+    margin-bottom: 2rem;
   }
   
   .inner-footer h4{
-    font-size: 1.7rem;
-    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+    margin: 1rem 0 1rem 0;
     color: #2F6690;
     font-weight: bold;
   }
@@ -648,7 +645,7 @@ footer {
     display: block;
     text-decoration: none;
     color: #BFAB25;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 3rem;
     font-weight: bold;
   }
@@ -665,12 +662,12 @@ footer {
   .social-links a {
     background-color: #111;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-right: 1.5rem;
     color: #fff;
     text-decoration: none;
@@ -679,6 +676,9 @@ footer {
   .copyright {
      background-color: #f2f2f2;
      padding: 1.3rem 0;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
   }
 
   .copy-right {
@@ -706,6 +706,7 @@ footer {
 @media screen and (min-width: 768px) {
   body {
     font-size: var(--lgFontSize);
+    padding-bottom: 362px;
   }
   
   h3 {
@@ -935,4 +936,32 @@ footer {
   height:"600";
 }
 
+footer {
+  padding-top: var(--lgSectionPadding);
+  padding-bottom: var(--lgSectionPadding);
+}
+
+.footer-container,.copy-right {
+  width: 65vw;
+  /* padding-top: var(--lgSectionPadding);
+  padding-bottom: var(--lgSectionPadding); */
+  }
+  
+  .inner-footer h4{
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .story a {
+    font-size: 1.5rem;
+  }
+  
+  .social-links a {
+    height: 50px;
+    width: 50px;
+    font-size: 2.5rem;
+  }
+  .inner-footer {
+    margin-bottom: 3rem;
+  }
 }
