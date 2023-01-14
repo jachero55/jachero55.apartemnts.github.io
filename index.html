@@ -5,144 +5,145 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" >
+  <link rel="stylesheet" href="./css/main.css" >
   <title>Blue Ocean</title>
 </head>
 <body>
   <div class="header-container">
-  <nav>
-  <div id="logo">
-    <a href="index.html"><h1>BOCS</h1></a>
-  </div>
-  <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="/">Services</a></li>
-    <div class="drop-down"><a href="#">Locations <i class="fa fa-chevron-down"></i></a>
-      <ul class="drop-down-list">
-        <li>Des Moines</li>
-        <li>Wes Des Moines</li>
-        <li>Ankeny</li>
-        <li>Grimes</li>
-        <li>Fort Dodge</li>
-        <li>Iowa City</li>
-        <li>Urbandale</li>
-        <li>Clive</li>
-        <li>Colwell</li>
-        <li>Coon Rapids</li>
-        <li>Crystal Lake</li>
-        <li>Davis City</li>
-        <li>Dow City</li>
-        <li>Duncombe</li>
-        <li>Dunkerton</li>
-        <li>Eagle Grove</li>
-        <li>Elk Horn</li>
-        <li>Ellsworth</li>
-        <li>Farmersburg</li>
-        <li>Farragut</li>
-        <li>Fredericksburg</li>
-        <li>Gillett Grove</li>
-        <li>Goldfield</li>
-        <li>Graettinger</li>
-      </ul>
-    </div>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="/">Appointments</a></li>
-    <li><a href="/">Contact</a></li>
-  </ul>
-  <button id="menu-btn"><i class="fa fa-align-justify"></i></button>
-  </nav>
+      <nav>
+          <div id="logo">
+            <a href="index.html"><h1>BOCS</h1></a>
+          </div>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/">Services</a></li>
+          <!-- <div class="drop-down"><a href="#">Locations <i class="fa     fa-chevron-down"></i></a>
+            <ul class="drop-down-list">
+              <li>Des Moines</li>
+              <li>Wes Des Moines</li>
+              <li>Ankeny</li>
+              <li>Grimes</li>
+              <li>Fort Dodge</li>
+              <li>Iowa City</li>
+              <li>Urbandale</li>
+              <li>Clive</li>
+              <li>Colwell</li>
+              <li>Coon Rapids</li>
+              <li>Crystal Lake</li>
+              <li>Davis City</li>
+              <li>Dow City</li>
+              <li>Duncombe</li>
+              <li>Dunkerton</li>
+              <li>Eagle Grove</li>
+              <li>Elk Horn</li>
+              <li>Ellsworth</li>
+              <li>Farmersburg</li>
+              <li>Farragut</li>
+              <li>Fredericksburg</li>
+              <li>Gillett Grove</li>
+              <li>Goldfield</li>
+              <li>Graettinger</li>
+            </ul>
+          </div> -->
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="/">Appointments</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+          <button id="menu-btn"><i class="fa fa-align-justify"></i></button>
+      </nav>
   </div>
   <div class="appointment-form">
-  <button class="close"><i class="fa fa-times"></i></button>
-  <h4>Appointment</h4>
+      <button class="close"><i class="fa fa-times"></i></button>
+      <h4>Appointment</h4>
     <form class="frm-appointment">
-    <div class="form-control">
-      <label for="firstname">First Name</label>
-      <input type="text" name="firstname" id="firstname" placeholder="Your first name" autofocus />
-    </div>
-    <div class="form-control">
-      <label for="lastname">Last Name</label>
-      <input type="text" name="lastname" id="lastname" placeholder="Your last name" />
-    </div>
-    <div class="form-control">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Your email" />
-    </div>
-    <div class="form-control">
-      <label for="car">Car Make</label>
-      <select name="car" id="car">
-        <option value="Bmw" selected>BMW</option>
-        <option value="Toyota">Toyota</option>
-        <option value="Nissan">Nissan</option>
-        <option value="Mercedes">Mercedes Benz</option>
-        <option value="Audi">Audi</option>
-        <option value="Hyundai">Hyundai</option>
-        <option value="Kia">Kia</option>
-        <option value="Honda">Honda</option>
-      </select>
-    </div>
-    <div class="form-control">
-      <label for="color">Color</label>
-      <select name="color" id="color">
-        <option value="Green" selected>Green</option>
-        <option value="Black">Black</option>
-        <option value="Red">Red</option>
-        <option value="White">White</option>
-        <option value="Blue">Blue</option>
-        <option value="Silver">Silver</option>
-      </select>
-    </div>
-    <!-- input-group --> 
-    <div class="form-group">
-      <label for="party">Enter a date and time for your appointment:</label>
-    <input id="appointment" type="datetime-local" name="partydate" />
-  </div>
-    <button>Schedule Service</button>
-    </form>
-  </div>
-  <div class="appointment-booking">
-    <button class="schedule-btn"><i class="fa fa-calendar"></i>Schedule Service</button>
-  </div>
-  <!-- Appointment success -->
-  <div class="success-modal-overlay">
-    <!-- Insert data here -->
-  </div>
-  <!-- Hero -->
-  <div class="home-hero">
-  <div class="banner">
-    <h2>Blue Ocean Car Service</h2>
-    <h3>Search For Services</h3>
-    <form class="search-form">
-      <div class="form-group">
-        <input type="text" name="search" id="search" placeholder="Search for items.." />
+        <div class="form-control">
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname" placeholder="Your first name" autofocus >
+        </div>
+        <div class="form-control">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Your last name" >
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Your email" >
+        </div>
+        <div class="form-control">
+            <label for="car">Car Make</label>
+            <select name="car" id="car">
+              <option value="Bmw" selected>BMW</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Mercedes">Mercedes Benz</option>
+              <option value="Audi">Audi</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Kia">Kia</option>
+              <option value="Honda">Honda</option>
+            </select>
+        </div>
+          <div class="form-control">
+          <label for="color">Color</label>
+          <select name="color" id="color">
+            <option value="Green" selected>Green</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+            <option value="Silver">Silver</option>
+          </select>
+          </div>
+          <div class="form-group">
+              <label for="party">Enter a date and time for your appointment:</label>
+            <input id="appointment" type="datetime-local" name="partydate" >
+          </div>
+          <button>Schedule Service</button>
+        </form>
+    </div><!-- End appointment form container -->
+        
+        <!-- Appoint form modal open button -->
+      <div class="appointment-booking">
+          <button class="schedule-btn"><i class="fa fa-calendar"></i>Schedule Service</button>
       </div>
-      <button id="search-btn"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-  </div>
+      
+      <!-- Appointment success -->
+      <div class="success-modal-overlay">
+          <!-- Insert data here -->
+      </div>
+        <!-- Hero -->
+      <div class="home-hero">
+          <div class="banner">
+            <h2>Blue Ocean Car Service</h2>
+            <form class="search-form">
+              <div class="form-group">
+                <!-- <label for="search">Search For Services</label> -->
+                <input type="text" name="search" id="search" class="search" placeholder="Search for items.." >
+              </div>
+              <button class="search-btn"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+      </div>
   <!-- Specializes -->
   <div class="specialize-container">
-  <div class="specialize">
-  <h4>Cars We Repair</h4>
-    <ul>
-      <li>BMW</li>
-      <li>AUDI</li>
-      <li>NISSAN</li>
-      <li>TOYOTA</li>
-      <li>SUBARU</li>
-      <li>KIA</li>
-      <li>HYUNDAI</li>
-      <li>HONDA</li>
-      <li>MAZDA</li>
-    </ul>
-  </div>
+      <div class="specialize">
+      <h4>Cars We Repair</h4>
+        <ul>
+          <li>BMW</li>
+          <li>AUDI</li>
+          <li>NISSAN</li>
+          <li>TOYOTA</li>
+          <li>SUBARU</li>
+          <li>KIA</li>
+          <li>HYUNDAI</li>
+          <li>HONDA</li>
+          <li>MAZDA</li>
+        </ul>
+      </div>
   </div>
   <!-- about -->
   <section class="service-hours-section">
-    <div class="company-details-container">
-      <div class="company">
+      <div class="company-details-container">
         <ul>
           <li class="schedule-btn">
             <span><i class="fa fa-calendar"></i></span>
@@ -157,10 +158,9 @@
             <p>+1 (435) 874 7635</p>
           </li>
         </ul>
-      </div>
     </div>
-    <div class="inner-description">
-      <div class="home-intro">
+      <div class="inner-description">
+        <div class="home-intro">
         <h3>Lets Get You Back On The Road</h3>
         <p>At Blue Ocean, our team is ready to start working on your car the moment you drive in. We value your time and we want you to get back on the road as soon as possible. We have a high qualified team just here waiting for you to meet them.</p>
         <p>To avoid delays, please schedule a service with us so we can be ready for you. We look forward to seeing you soon.</p>
@@ -169,7 +169,7 @@
         </div>
       </div>
       <div class="service-hours">
-        <div class="hours">
+        <div class="open-hours">
           <h3>Service Hours</h3>
             <ul>
               <li>
@@ -205,28 +205,28 @@
       </div>
     </div>
   </section>
-  <!-- featured -->
+  <!-- Gallery -->
 <section class="gallery-section">
   <h3>Gallery</h3>
-    <div class="slider">
+    <div class="center">
       <div class="slider-container item">
         <a href="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
         </a>
       </div>
       <div class="slider-container item">
         <a href="https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <img src="https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
         </a>
       </div>
       <div class="slider-container item">
         <a href="https://images.pexels.com/photos/8065769/pexels-photo-8065769.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/8065769/pexels-photo-8065769.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <img src="https://images.pexels.com/photos/8065769/pexels-photo-8065769.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
         </a>
       </div>
       <div class="slider-container item">
         <a href="https://images.pexels.com/photos/11277766/pexels-photo-11277766.jpeg?auto=compress&cs=tinysrgb&w=1600" class="fancybox" data-fancybox="gallery1">
-        <img src="https://images.pexels.com/photos/11277766/pexels-photo-11277766.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+        <img src="https://images.pexels.com/photos/11277766/pexels-photo-11277766.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
         </a>
       </div>
     </div>
@@ -235,7 +235,7 @@
     <section class="service-section">
       <h3>Blue Ocean Services</h3>
       <article class="service-article">
-        <div class="reasons-flex">
+        <div class="services-flex">
           <!-- Insert data here -->
         </div>
       </article>
@@ -243,9 +243,9 @@
 <!-- Slider -->
 <section class="blog-section">
   <h3>Our Blog</h3>
-  <article class="slider">
+  <article class="center">
     <div class="slider-container">
-      <img src="https://images.pexels.com/photos/5023544/pexels-photo-5023544.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+      <img src="https://images.pexels.com/photos/5023544/pexels-photo-5023544.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
       <div class="slider-card-details">
       <h4>Car Restoration</h4>
       <p>It doesn't have to take a lot of money to achieve it.</p>
@@ -253,7 +253,7 @@
       </div>
     </div>
     <div class="slider-container">
-      <img src="https://images.pexels.com/photos/4756888/pexels-photo-4756888.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+      <img src="https://images.pexels.com/photos/4756888/pexels-photo-4756888.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
       <div class="slider-card-details">
         <h4>Your Garage</h4>
         <p>All you need to know about your garage care and more.</p>
@@ -261,7 +261,7 @@
         </div>
     </div>
     <div class="slider-container">
-      <img src="https://images.pexels.com/photos/207498/pexels-photo-207498.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+      <img src="https://images.pexels.com/photos/207498/pexels-photo-207498.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
       <div class="slider-card-details">
         <h4>Engine Car</h4>
         <p>Are you taking care of your engine? Here are different ways on how to.</p>
@@ -269,7 +269,7 @@
         </div>
     </div>
     <div class="slider-container">
-      <img src="https://images.pexels.com/photos/4022543/pexels-photo-4022543.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" />
+      <img src="https://images.pexels.com/photos/4022543/pexels-photo-4022543.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="person" >
       <div class="slider-card-details">
         <h4>New Brakes</h4>
         <p>Sometimes we all just need new breaks. Here is a look at some.</p>
@@ -282,11 +282,12 @@
 <div class="subscribe">
 <div class="form-container">
   <h3>Subscribe To Our Newsletter</h3>
-  <form class="search-form subscribe-form">
+  <form class="search-form">
     <div class="form-group">
-      <input type="text" name="search" id="search" placeholder="Search for items.." />
+      <!-- <label for="search">Search For Services</label> -->
+      <input type="text" name="search" id="search" class="search" placeholder="Search for items.." >
     </div>
-    <button id="search-btn">Subscribe</button>
+    <button class="search-btn"><i class="fa fa-search"></i></button>
   </form>
 </div>
 </div>
@@ -294,7 +295,7 @@
 <div class="map-overlay">
   <div class="map">
   <button class="map-btn"><i class="fa fa-times"></i></button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95304.84079306701!2d-93.67640763712673!3d41.71455687926245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee8513f1d17fc9%3A0x85b00ee7d535dcec!2sAnkeny%2C%20IA!5e0!3m2!1sen!2sus!4v1673427038669!5m2!1sen!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95304.84079306701!2d-93.67640763712673!3d41.71455687926245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee8513f1d17fc9%3A0x85b00ee7d535dcec!2sAnkeny%2C%20IA!5e0!3m2!1sen!2sus!4v1673427038669!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div>
 <!-- scroll to top button -->
@@ -360,6 +361,7 @@
 <script src="./js/gallery.js"></script>
 <script src="./js/blog.js"></script>
 <script src="./js/ui.js"></script>
+<script src="./js/navbar.js"></script>
 <script src="./js/scrollTop.js"></script>
 <script src="./js/app.js"></script>
 </body>

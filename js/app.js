@@ -6,6 +6,7 @@ class App {
 		this.services = new Services();
 		this.gallery = new Gallery();
 		this.blog = new Blog();
+		this.nav = new Navbar();
 		this.scrollTop = new ScrollTop();
 	}
 

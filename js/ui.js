@@ -10,7 +10,7 @@ class Ui {
 		let serviceArray = [];
 		this.serviceArray = services;
 		serviceArray = await services;
-		const data = document.querySelector('.reasons-flex');
+		const data = document.querySelector('.services-flex');
 		let result = '';
 		await serviceArray.forEach((service) => {
 			result += `
