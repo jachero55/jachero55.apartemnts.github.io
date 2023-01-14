@@ -180,6 +180,10 @@ nav ul li a {
   -o-transition: 0.3s ease-in-out;
 }
 
+#menu-btn{
+  font-size: 2rem;
+}
+
 /* hero */
 .home-hero {
   margin-top: 5rem;
@@ -675,7 +679,7 @@ footer {
   
   .copyright {
      background-color: #f2f2f2;
-     padding: 1.3rem 0;
+     padding: 2rem 0;
      position: absolute;
      bottom: 0;
      width: 100%;
@@ -702,6 +706,10 @@ footer {
     border: none;
   }
   
+  .gallery h3, .blog-section h3 {
+    padding-bottom: 0;
+    }
+  
 
 @media screen and (min-width: 768px) {
   body {
@@ -712,6 +720,10 @@ footer {
   h3 {
     padding-bottom: 3rem;
     font-size: 2.5rem;
+  }
+  
+  .gallery h3, .blog-section h3 {
+  padding-bottom: 0;
   }
   
   #menu-btn{
